@@ -8,6 +8,9 @@ See `LICENSE.md` for more information.
 1. `cd` into the downloaded project root directory.
 1. Run `python manage.py runserver`.
 
+## Run Tests
+1. `python manage.py test <app>`
+
 ## Update Database Structure
 1. Run `python manage.py migrate`.
 1. Make your changes to the database models.
