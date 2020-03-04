@@ -1,0 +1,29 @@
+{% load static %}
+
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="{% static 'polls/style.css' %}"
+>
+
+{% if latest_question_list %}
+	<ul>
+	{% for question in latest_question_list %}
+		<li>
+			<!--
+				We have the URL already for this next line!
+				So there is no need to explicitly state it again.
+				It lives in the `polls.url` module.
+
+				Specifically:
+				path('<int:question_id>/', ...)
+			--->
+			<a href="{% url 'polls:detail' question.id %}">
+				{{ question.question_text }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No polls are available.</p>
+{% endif %}
