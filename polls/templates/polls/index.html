@@ -10,7 +10,7 @@
 				Specifically:
 				path('<int:question_id>/', ...)
 			--->
-			<a href="{% url 'detail' question.id %}">
+			<a href="{% url 'polls:detail' question.id %}">
 				{{ question.question_text }}
 			</a>
 		</li>
