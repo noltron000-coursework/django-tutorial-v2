@@ -23,7 +23,8 @@ If you have trouble remembering which command does what, this tidbit from Stack 
 - `python manage.py makemigrations <app>`: Create the migrations (generate the SQL commands).
 - `python manage.py migrate`: Run the migrations (execute the SQL commands).
 
-
+## Other Useful Commands
+ - `python manage.py shell`: runs the Django Shell.
 
 ## Credits
 Many thanks to the Django team, their [tutorial], and their great documentation.
