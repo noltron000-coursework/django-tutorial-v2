@@ -8,6 +8,19 @@ See `LICENSE.md` for more information.
 1. `cd` into the downloaded project root directory.
 1. Run `python manage.py runserver`.
 
+## Update Database Structure
+1. Make your changes to the database models.
+	- These can usually be found in a `models.py` folder.
+1. Run `python manage.py makemigrations <app>`
+	- One example of `<app>` is `polls`.
+1. Run `python manage.py migrate`.
+
+If you have trouble remembering which command does what, this tidbit from Stack Overflow may help you&hellip;
+- `python manage.py makemigrations <app>`: Create the migrations (generate the SQL commands).
+- `python manage.py migrate`: Run the migrations (execute the SQL commands).
+
+
+
 ## Credits
 Many thanks to the Django team, their [tutorial], and their great documentation.
 Thanks also to @Dani from Make School, and her team.
